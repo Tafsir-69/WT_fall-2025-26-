@@ -22,6 +22,10 @@
         button {
             padding: 10px 18px;
             margin-top: 10px;
+           color: white;         
+          background-color: blue; 
+          border: none;           
+          border-radius: 5px;    
             
         }
     </style>
@@ -51,7 +55,7 @@
         <tr><td><div id="output" style="margin-top:15px; font-size:18px;"></div></td></tr>
 
     </table>
-
+   
 
 <script>
 function handleSubmit() {
