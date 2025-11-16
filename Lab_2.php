@@ -28,6 +28,12 @@
           border-radius: 5px;    
             
         }
+        div{
+             background-color: lightgray;
+             padding: 10px;
+             border: 1px solid #333;
+             border-radius: 5px;
+        }
     </style>
 </head>
 
