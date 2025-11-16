@@ -20,7 +20,7 @@
         button {
             padding: 10px 18px;
             margin-top: 10px;
-            cursor: pointer;
+            
         }
     </style>
 </head>
@@ -60,25 +60,24 @@ function handleSubmit() {
     const confirm_password = document.getElementById("confirm_password").value;
     const output = document.getElementById("output");
 
-    // All fields required
+    
     if (name === "" || email === "" || password === "" || confirm_password === "") {
         output.innerHTML = `<span style="color:red">All fields are required.</span>`;
         return;
     }
 
-    // Check email has @
+  
     if (!email.includes("@")) {
         output.innerHTML = `<span style="color:red">Email must contain '@'</span>`;
         return;
     }
 
-    // Check passwords match
+  
     if (password !== confirm_password) {
         output.innerHTML = `<span style="color:red">Passwords do not match.</span>`;
         return;
     }
 
-    // Success message
     output.innerHTML = `
         <strong style="color:green">✔ Registration Successful!</strong><br><br>
         Name: ${name}<br>
