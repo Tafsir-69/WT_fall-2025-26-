@@ -5,7 +5,9 @@
     <style>
         body {
             font-family: Arial;
-            margin: 25px;
+            display: flex;
+            justify-content: center;
+           
         }
         table {
             border: 1px solid #333;
